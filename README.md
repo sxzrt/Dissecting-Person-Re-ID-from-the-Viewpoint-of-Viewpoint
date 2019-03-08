@@ -1,5 +1,7 @@
 ## Dissecting Person Re-identification from the Viewpoint of Viewpoint 
 
+![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-dfv2.jpg)
+
 ****
 ### The Link of the Dataset
 We release 3D models of the identeties and the 1266 models can be downloaded from the following links:<br>
