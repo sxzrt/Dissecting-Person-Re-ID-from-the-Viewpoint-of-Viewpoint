@@ -1,6 +1,6 @@
 ## Dissecting Person Re-identification from the Viewpoint of Viewpoint 
 
-![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-df2v.jpg)
+![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-dfv2.jpg)
 
 ****
 ### The Link of the Dataset
