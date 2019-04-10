@@ -8,13 +8,18 @@ Visual factors such as viewpoint, pose, illumination and background, are usually
 
 ## Dissecting Person Re-identification from the Viewpoint of Viewpoint 
 Based on the PersonX engine, this paper makes an early attempt in studying a particular factor, **viewpoint**.
-![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-dfv2.jpg)
+![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-dfv.jpg)
 
-Here, we denote viewpoint as the pedestrian rotation angle (as shown in above Figure). Since different views of a person contain different details, the viewpoint of a person influences the visual information contained in the image, which is directly related to the performance of the algorithm. Therefore, we investigate the exact influence of viewpoint on the system from three aspects. 
+Here, we denote viewpoint as the pedestrian rotation angle (as shown in above Figure). Since different views of a person contain different details, the viewpoint of a person influences the visual information contained in the image, which is directly related to the performance of the algorithm. Therefore, we investigate the exact influence of viewpoint on the system from **three** aspects. 
 
 
-### The PersonX Dataset
-We release 3D models of the identeties and the 1266 models can be downloaded from the following links:<br>
-[Baidu Disk](https://pan.baidu.com/s/1nXdrniA7IDgJDKq6FexFJA)<br>
-[Google Drive](https://drive.google.com/file/d/1d2PuKD60qFpugbqYfMHtjKmRj9OUdPG4/view?usp=sharing)<br>
-!!! If you want to use these models to generat images by yourself, you can check [the instructions of the dataset](https://github.com/sxzrt/Instructions-of-the-PersonX-dataset).
+### 1. How do viewpoint distributions in the training set affect model learning?
+
+
+
+### 2. How do true match viewpoints in the gallery affect retrieval?
+
+### 3. How does the query viewpoint influence the retrieval?
+
+
+
