@@ -14,6 +14,7 @@ The PersonX dataset contains six backgrounds, including three pure color backgro
 To show the feasible of using sunthetic data, we conduct experiments on both real-world (the Market-1501/1203 and Duke datasets)and synthetic datasets by using evaluate three algorithms IDE+, triplet feature and PCB. The results are shown in the follwing figure.
 
 <div align=center><img src="https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/benchmark.jpg" width="800" /></div>
+
 `“lr” means the frames are low resolution of 512×242 instead of the original resolution 1024×768`
 
 Three characteristics of PersonX can be observed from the validaton results:
@@ -26,6 +27,7 @@ Three characteristics of PersonX can be observed from the validaton results:
 
 ## Dissecting Person Re-identification from the Viewpoint of Viewpoint 
 Based on the PersonX engine, this paper makes an early attempt in studying a particular factor, **viewpoint**.
+
 ![](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/fig-dfv.jpg)
 
 Here, we denote viewpoint as the pedestrian rotation angle (as shown in above Figure). Since different views of a person contain different details, the viewpoint of a person influences the visual information contained in the image, which is directly related to the performance of the algorithm. Therefore, we investigate the exact influence of viewpoint on the system from **three** aspects. 
@@ -33,6 +35,17 @@ Here, we denote viewpoint as the pedestrian rotation angle (as shown in above Fi
 
 ### 1. How do viewpoint distributions in the training set affect model learning?
 #### 1.1 Experiment design
+* Control group 1. We randomly select half (18 out of 36) or a quarter (9 out of 36) images of each identity
+for training.
+* Control group 2. The training set is constituted by randomly selecting half (18 out of 36) or a quarter (9 out of 36) viewpoints for each identity.
+There is an example of Control group 1 and Control group2 in the follwing figure.
+
+<div align="center">
+  <img src="https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/v3-valse1.jpg" width="600">
+</div>
+
+* Experimental group 1. Train with two orientations. The training images exhibit two orientations, left+right or front+back. The training set is thus half of the original training set.
+* Experimental group 2. Train with one orientation. The training set has one orientation, i.e., left, right, front, or back. The training set becomes a quarter of the size of the original training set.
 
 #### 1.2 Experiment results
 
