@@ -91,7 +91,7 @@ We train a model on the original training set comprised of every viewpoint. We m
 match contains the same person as the query, and its viewpoint is between 0 and 350. Viewpoints of the distractor gallery images are images of all other persons. Taking using due left as query viewpoint as an example, the setting is shown as follows: 
 
 <div align="center">
-  <img src="https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/ed3.jpg" width="600">
+  <img src="https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/ed3.jpg" width="700">
 </div>
 
 ### 3.2 Experiment results
@@ -106,3 +106,16 @@ Under each query viewpoint, we report 36 rank-1 scores obtained by the query to 
 ### 3.3 Subsection conclusions
 
 * The query viewpoint of left/right generally leads to higher re-ID accuracy than front/back viewpoints.
+
+
+
+**** 
+If you use this dataset in your research, please kindly cite our work as, <br>
+```
+@inproceedings{sun2019dissecting,
+	title={Dissecting Person Re-identification from the Viewpoint of Viewpoint},
+	author={Sun, Xiaoxiao and Zheng, Liang},
+	booktitle={CVPR},
+	year={2019}
+}
+```
