@@ -2,7 +2,12 @@
 
 ![Fig 1](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/logo1.jpg)
 
-Visual factors such as viewpoint, pose, illumination and background, are usually considered as important challenges in person re-identification (re-ID). Despite the acknowledgement that these factors are influential, quantitative studies on how they affect a re-ID system are still lacking. To derive insights in this scientific campaign, the burning problem needed to be settled is collecting quantitative data. However, it is difficult to control the changes of visual factors in practice and the cost of collecting this kind of data is expensive. Therefore, we build a synthetic data engine [PersonX](https://github.com/sxzrt/Instructions-of-the-PersonX-dataset) (the [link](https://arxiv.org/pdf/1812.02162.pdf) of paper).
+Visual factors such as viewpoint, pose, illumination and background, are usually considered as important challenges in person re-identification (re-ID). Despite the acknowledgement that these factors are influential, quantitative studies on how they affect a re-ID system are still lacking. To derive insights in this scientific campaign, the burning problem needed to be settled is collecting quantitative data. However, it is difficult to control the changes of visual factors in practice and the cost of collecting this kind of data is expensive. Therefore, we build a synthetic data engine **PerxonX**.
+
+The link of the illustration of the data engine is [PersonX](https://github.com/sxzrt/Instructions-of-the-PersonX-dataset); the link of the paper is [pdf-link](https://arxiv.org/pdf/1812.02162.pdf).
+
+To help know this work quickly, there are some summarized contents as follows.
+
 ## List of contents
 * [1. Dataset introduction](#1-dataset-introduction)
 * [2. Dataset validation](#2-dataset-validation)
@@ -10,6 +15,7 @@ Visual factors such as viewpoint, pose, illumination and background, are usually
     * [3.1. How do viewpoint distributions in the training set affect model learning?](#31-how-do-viewpoint-distributions-in-the-training-set-affect-model-learning)
     * [3.2. How do true match viewpoints in the gallery affect retrieval?](#32-how-do-true-match-viewpoints-in-the-gallery-affect-retrieval)
     * [3.3. How does the query viewpoint influence the retrieval?](#33-how-does-the-query-viewpoint-influence-the-retrieval)
+* [4. Citation](#4-citation)
 
 ## 1. Dataset introduction 
 The PersonX dataset contains six backgrounds, including three pure color backgrounds and three scene backgrounds. There are 1266 hand-crafted identities (547 females and 719 males) and each identity has 36 images (corresponding to 36 viewpoints that are defined below). In this work, we combine two different backgrounds as one dataset to study different situations. The backgrounds and subsets of PersonX are shows as follows.
@@ -58,8 +64,8 @@ The Re-ID accuracy (mAP, %) when the training set has missing orientations/viewp
 
 ![Fig 6](https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/Train-1.jpg)
 
-Here, **A** and **B**: we use two orientations for training. For example, we can train with left and right orientations only (see the definition of viewpoint). **C**: we train with one orientation only, *i.e.,* left, right, front, or back orientation. For each dataset, we have two control groups. **D**: Impact of missing continuous viewpoints on PersonX46. The horizontal axis is the remaining number of viewpoints and vertical axis is the mAP. In the experimental group, continuous viewpoints are removed. The number on this curve denotes the remaining number of viewpoints.
-“n.s.” represents that the difference between results is not statistically significant (i.e., p-value > 0.05).  ★ corresponds to statistically significant (*i.e.,* 0.01 < p-value < 0.05). ★★★ means the difference between results is statistically very significant (*i.e.,* 0.001 < p-value < 0.01).
+Here, **A** and **B**: we use two orientations for training, *e.g.,*, training with left and right orientations only (see the definition of viewpoint). **C**: we train with one orientation only, *i.e.,* left, right, front, or back orientation. **D**: Impact of missing continuous viewpoints on PersonX46. The horizontal axis is the remaining number of viewpoints and vertical axis is the mAP. In the experimental group, continuous viewpoints are removed. The number on this curve denotes the remaining number of viewpoints.
+“n.s.” represents that the difference between results is not statistically significant.  ★ corresponds to statistically significant. ★★★ means the difference between results is statistically very significant.
 
 ### 3.1.3 Subsection conclusions
 * Missing viewpoints compromises training.
@@ -114,6 +120,8 @@ Under each query viewpoint, we report 36 rank-1 scores obtained by the query to 
 * The query viewpoint of left/right generally leads to higher re-ID accuracy than front/back viewpoints.
 
 
+
+## 4. Citation
 
 **** 
 If you use this dataset in your research, please kindly cite our work as, <br>
