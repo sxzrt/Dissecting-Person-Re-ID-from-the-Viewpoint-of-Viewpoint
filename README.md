@@ -75,7 +75,7 @@ Here, **A** and **B**: we use two orientations for training, *e.g.,*, training w
 
 ## 3.2. How do true match viewpoints in the gallery affect retrieval
 ### 3.2.1 Experiment design
-We denote the viewpoint of a query and its true match as <a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{t}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta_{t}" title="\theta_{t}" /></a> and <a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{q}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta_{q}" title="\theta_{q}" /></a>, respectively.
+We denote the viewpoint of a query and its true match as \theta_{t} and \theta_{q}, respectively.
 * Experimental group 1. The three true matches whose viewpoints are viewpoint of query <img src="https://latex.codecogs.com/gif.latex?\pm" title="\pm" /> 10 are removed (set as “junk”).
 * Control group 1. Three true matches are randomly removed from the gallery. The illustrations are shown as follows:  
 
@@ -83,7 +83,7 @@ We denote the viewpoint of a query and its true match as <a href="https://www.co
   <img src="https://github.com/sxzrt/The-PersonX-dataset/blob/master/images/ed2.jpg" width="600">
 </div>
 
-Similarly, experimental group 2 and 3, as well as control group 2 and 3 means remove Five (<a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{t}&space;\in&space;\theta_{q}\pm&space;20^o" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta_{t}&space;\in&space;\theta_{q}\pm&space;20^o" title="\theta_{t} \in \theta_{q}\pm 20^o" /></a>) and Nine (<a href="https://www.codecogs.com/eqnedit.php?latex=\theta_{t}&space;\in&space;\theta_{q}\pm&space;40^o" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\theta_{t}&space;\in&space;\theta_{q}\pm&space;40^o" title="\theta_{t} \in \theta_{q}\pm 40^o" /></a>)  images, respectively.
+Similarly, experimental group 2 and 3, as well as control group 2 and 3 means remove Five (\theta_{t} \in [\theta_{q}-20, \theta_{q}+20] ) and Nine (\theta_{t} \in [\theta_{q}-40, \theta_{q}+40] ) images, respectively.
 
 ### 3.2.2 Experiment results
 Experiments are conducted on PersonX45, PersonX46, PersonX46-lr as well as Market-1203. 
